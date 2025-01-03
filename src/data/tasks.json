@@ -1,0 +1,45 @@
+{
+  "opening": [
+    {
+      "title": "Brew Persian tea",
+      "description": "5 TBSP of tea in filter. Brew twice, then turn on the warmer"
+    },
+    {
+      "title": "Brew drip coffee",
+      "subtasks": [
+        {
+          "title": "Brew medium roast.",
+          "description": "Use 250g of beans and 1 gallon of water"
+        },
+        {
+          "title": "Brew dark roast.",
+          "description": "Use 220g of beans and 1 gallon of water"
+        }
+      ]
+    },
+    {
+      "title": "Set up espresso machine",
+      "subtasks": [
+        { "title": "Purge wands and clean solution out of jugs." },
+        {
+          "title": "Adjust grind until 17-19g of coffee take 28 to 34 sec to pull"
+        }
+      ]
+    },
+    {
+      "title": "Set up self service station",
+      "subtasks": []
+    }
+  ],
+  "closing": [
+    { "title": "Shut down espresso machine" },
+    { "title": "Count day-olds and report" },
+    { "title": "Close cash register" }
+  ],
+  "side-work": [
+    {
+      "title": "Refill retail shelves",
+      "subtasks": [{ "title": "Restock loose leaf teas" }]
+    }
+  ]
+}
