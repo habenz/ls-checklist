@@ -1,45 +1,233 @@
 {
-  "opening": [
+  "\ufeff**Closing": [
     {
-      "title": "Brew Persian tea",
-      "description": "5 TBSP of tea in filter. Brew twice, then turn on the warmer"
+      "title": "Pull out pound cakes and brownies for tomorrow (if needed)",
+      "description": "If the next day is a weekday then 6 brownies (half a tray) and 5 pieces of each flavor of pound cake is enough. Weekends need more. Ask your supervisor or shift lead. Frozen brownies and pound cake are in the kitchen freezer closest to the door."
     },
     {
-      "title": "Brew drip coffee",
+      "title": "Restock cups, lids, packaging, milks, and espresso beans",
       "subtasks": [
         {
-          "title": "Brew medium roast.",
-          "description": "Use 250g of beans and 1 gallon of water"
+          "title": "Restock cups and lids",
+          "description": "Cups and lids are at the top of the cubbies along the sta"
         },
         {
-          "title": "Brew dark roast.",
-          "description": "Use 220g of beans and 1 gallon of water"
-        }
-      ]
-    },
-    {
-      "title": "Set up espresso machine",
-      "subtasks": [
-        { "title": "Purge wands and clean solution out of jugs." },
+          "title": "Restock paper bags and other packaging if needed",
+          "description": "Generally packaging is in the basement along the wall to the right as you come down the stairs. It\u2019s still a little messy so ask someone if you can\u2019t find something."
+        },
         {
-          "title": "Adjust grind until 17-19g of coffee take 28 to 34 sec to pull"
+          "title": "Restock milks",
+          "description": "Refill milks below the espresso machine with milks from the fridges closest to the stairs, and then from the basement. Unopened oat milk can be to the right of the fridge instead of inside."
+        },
+        {
+          "title": "Restock espresso beans",
+          "description": "Espresso beans are at the bottom of the cubbies along the sta"
         }
       ]
     },
     {
-      "title": "Set up self service station",
-      "subtasks": []
-    }
-  ],
-  "closing": [
-    { "title": "Shut down espresso machine" },
-    { "title": "Count day-olds and report" },
-    { "title": "Close cash register" }
-  ],
-  "side-work": [
+      "title": "Break down espresso machine",
+      "subtasks": [
+        {
+          "title": "Send pitchers and knock box back to dishwasher",
+          "description": "You can use the knock box as a tray to carry everything. Include pitchers, measuring cups and spoons, and glass espresso cups."
+        },
+        {
+          "title": "Brush heads with steam wand",
+          "description": "Attach the hose with a brush on the end to a steam wand. Cover only about half of the length of the steam wand so the pressure doesn\u2019t make it pop off. Run the steam and thoroughly brush each head. Be careful!"
+        },
+        {
+          "title": "Soak portafilters with Cafiza",
+          "description": "Empty the small tub under the sink. Put in 3 scoops of Cafiza and fill a little less than halfway with water. Remove the baskets from the portafilters and soak them in the mixture. Put 2 of the portafilters in the mixture, but make sure the black handles are not in the liquid. Allow to sit for 15 minutes. Rinse the portafilters afterwards. You can also unscrew the metal screens and put them in to soak."
+        },
+        {
+          "title": "Rinse out espresso heads with Cafiza",
+          "description": "Put the basket with no holes in a portafilter. Put \u00bc scoop of Cafiza in the basket and put the portafilter on a head. Press the left and right buttons at the same time to start the cleaning cycle. If that doesn\u2019t work you can turn the water on for 5 sec, wait for 5 sec and then repeat 10 times. After the cleaning cycle remove the portafilter and allow the water to run for a bit. Repeat this for all the heads."
+        },
+        {
+          "title": "Wash metal drip tray and wipe out water and grounds",
+          "description": "Remove the grate and drip tray and either send it back to be washed or wash it yourself. Sop up the water in the reservoir below and wipe out the grounds. Replace the grate and tray."
+        },
+        {
+          "title": "Soak steam wands in Rinza",
+          "description": "Wipe any stuck-on milk off the steam wands. Pour 30ml of Rinza and some water into a pitcher for each wand. Steam the mix for a second or so and then leave the wands to soak it in overnight."
+        },
+        {
+          "title": "Wipe down the machine"
+        },
+        {
+          "title": "Close, turn off, and wipe the grinders",
+          "description": "There\u2019s a shutter just below the hopper you can use to close the grinder."
+        },
+        {
+          "title": "Store maple syrup, tahini, saffron, and matcha in fridge overnight"
+        }
+      ]
+    },
     {
-      "title": "Refill retail shelves",
-      "subtasks": [{ "title": "Restock loose leaf teas" }]
+      "title": "Empty coffee and tea carafes and send to dishwasher",
+      "description": "Dark roast can be saved to use as iced coffee for the next day, and tea can be saved to use for iced tea."
+    },
+    {
+      "title": "Count all leftover food and post counts to the group chat",
+      "description": "remember to count all pastries, cookies, brownies, pound cakes,sandwiches, pizzas, breads, eclairs, desserts, full cakes, parfaits, and dog treats(?)"
+    },
+    {
+      "title": "Pastry Fridge",
+      "subtasks": [
+        {
+          "title": "Store eclairs in a fish tub"
+        },
+        {
+          "title": "Send black platters to be washed"
+        },
+        {
+          "title": "Put all cakes in boxes or slices in fish tubs"
+        },
+        {
+          "title": "Wipe all glass surfaces with windex"
+        }
+      ]
+    },
+    {
+      "title": "Self service area",
+      "subtasks": [
+        {
+          "title": "Take milk containers to be washed then store in fridge"
+        },
+        {
+          "title": "Take bus tray back to dishwasher"
+        },
+        {
+          "title": "Restock drinks in the self service fridge"
+        },
+        {
+          "title": "Restock napkins, all sugars, utensils, straws and stirrers, all sugars",
+          "description": "Napkins, utensils, straws, and stirrers are near the bottom of the cubbies next to the stairs. Refill the cubbies from the boxes in the basement along the wall to the right of the stairs. Sugars are in the basement along the same wall."
+        },
+        {
+          "title": "Store honey and maple syrup",
+          "description": "Store honey on top of the espresso machine. Store maple syrup in the barista fridge."
+        },
+        {
+          "title": "Empty water"
+        },
+        {
+          "title": "Take out the trash",
+          "description": "Liners are in the cubbies on the stairs, all the way to the lef"
+        },
+        {
+          "title": "Wipe down self service area"
+        },
+        {
+          "title": "Close shade and turn off light",
+          "description": "Light switch is in the front at the bottom of the fridge."
+        }
+      ]
+    },
+    {
+      "title": "Dining Area",
+      "subtasks": [
+        {
+          "title": "Wipe down tables"
+        },
+        {
+          "title": "Vacuum and mop"
+        },
+        {
+          "title": "Wipe door with windex if needed"
+        }
+      ]
+    },
+    {
+      "title": "Pastry display",
+      "subtasks": [
+        {
+          "title": "Make day old bread and pastry bags",
+          "description": "The plastic bags are at the bottom of the cubbies below the register. Pack viennoiserie bags in groups of 3 and try to give a variety. Pack scone bags in groups of 3. Pack focaccia in packs of two. Use the larger bags to pack each loaf of bread separately and put a sticker label on them. Stickers are in the Ahmed tea canister in the cubbies by the stairs."
+        },
+        {
+          "title": "Knock crumbs out of bread display trays",
+          "description": "The trays can be pulled off the wall, knocked and replaced."
+        },
+        {
+          "title": "Wipe down displays, signs and counter with sanitizer"
+        },
+        {
+          "title": "Rebuild the display",
+          "description": "Use the picture on Whatsapp as a reference. Face the signs towards yourself to make things easier for the morning crew."
+        }
+      ]
+    },
+    {
+      "title": "Update stock on POS",
+      "description": "Use the bread list in the binder to update the bread stock. Remember to respect the buffer! Mark items we typically have when we open as in stock. Items that come later like fruit croissants or pizza should be marked out of stock. Use the pastry count to update the stock of refrigerated desserts."
+    },
+    {
+      "title": "Close the cash register",
+      "subtasks": [
+        {
+          "title": "Write the date and the names of all closers on an envelope"
+        },
+        {
+          "title": "Count the tips and write it on the envelope"
+        },
+        {
+          "title": "Record the bills in the register in the pos"
+        },
+        {
+          "title": "Write the total register amount on the envelope?"
+        },
+        {
+          "title": "Leave $100 + tips  and all the change in the register"
+        },
+        {
+          "title": "Put the rest of the money in the envelope"
+        },
+        {
+          "title": "Print the receipt and put it in the envelope"
+        },
+        {
+          "title": "Have everyone sign the envelope"
+        },
+        {
+          "title": "Put the envelope in the lock box"
+        }
+      ]
+    },
+    {
+      "title": "Wipe down all counters and surfaces",
+      "description": "Make sure to wipe inside the fridges too."
+    },
+    {
+      "title": "Charge iPad, Toast handheld, and scale"
+    },
+    {
+      "title": "Take out trash, recycling, and rags",
+      "description": "Dirty rag bucket is to the right of the lockers in the basem"
+    },
+    {
+      "title": "Sweep and Mop behind counter"
+    },
+    {
+      "title": "Bleach both sinks"
+    },
+    {
+      "title": "Close up",
+      "subtasks": [
+        {
+          "title": "Take in the sign and dog bowl from outside"
+        },
+        {
+          "title": "Make sure the back door is locked"
+        },
+        {
+          "title": "turn off all the lights"
+        },
+        {
+          "title": "lock the front door"
+        }
+      ]
     }
   ]
 }
