@@ -1,5 +1,7 @@
+import json
+
 tasks_json = {}
-with open("text_task_list.txt") as f:
+with open("text_task_list.txt", encoding="utf-8-sig") as f:
     for line in f:
         line = line.strip()
         if not line or "Missing" in line:
@@ -27,7 +29,6 @@ with open("text_task_list.txt") as f:
                 curr_subtask["description"] = line
             else:
                 curr_task["description"] = line
-import json
 
 with open("tasks.json", "w") as file:
     json.dump(tasks_json, file, indent=2)
