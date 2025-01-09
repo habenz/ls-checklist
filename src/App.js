@@ -1,4 +1,3 @@
-import styles from "./App.module.css";
 import tasks from "./data/tasks.json";
 import { initializeChecklist } from "./initializeFromJson";
 import Checklist from "./Checklist";
@@ -7,8 +6,10 @@ const closingChecklist = initializeChecklist(tasks.Closing);
 
 function App() {
   return (
-    <div className={styles.centered}>
-      <h1 className={styles.content}>Closing Checklist</h1>
+    <div className="flex flex-col items-center">
+      <h1 className="max-w-2xl w-4/5 px-1 text-xl sm:text-2xl font-bold">
+        Closing Checklist
+      </h1>
       <Checklist initialChecklist={closingChecklist} />
     </div>
   );

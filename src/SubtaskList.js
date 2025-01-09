@@ -1,8 +1,6 @@
-import styles from "./Task.module.css";
-
 function SubtaskList({ subtasks, toggleCompletion, taskComplete }) {
   return (
-    <ul>
+    <ul className="list-none ps-2">
       {subtasks.map((st) => (
         <li key={st.id}>
           <input
@@ -13,7 +11,7 @@ function SubtaskList({ subtasks, toggleCompletion, taskComplete }) {
           />
           <label
             htmlFor={`${st.title}`}
-            className={st.complete || taskComplete ? styles.complete : ""}
+            className={(st.complete || taskComplete) && "line-through"}
           >
             {st.title}
           </label>
