@@ -1,5 +1,6 @@
 import styles from "./Task.module.css";
 import appStyles from "./App.module.css";
+import SubtaskList from "./SubtaskList";
 
 function Task({
   task: { id, title, expanded, complete, subtasks },
@@ -24,24 +25,11 @@ function Task({
       </div>
       {/* really just because I don't trust myself to hand write json */}
       {subtasks?.length > 0 && expanded && (
-        <ul>
-          {subtasks.map((st) => (
-            <li key={st.id}>
-              <input
-                type="checkbox"
-                id={`${st.title}`}
-                checked={st.complete || complete}
-                onChange={() => toggleCompletion(st.id)}
-              />
-              <label
-                htmlFor={`${st.title}`}
-                className={st.complete || complete ? styles.complete : ""}
-              >
-                {st.title}
-              </label>
-            </li>
-          ))}
-        </ul>
+        <SubtaskList
+          subtasks={subtasks}
+          taskComplete={complete}
+          toggleCompletion={toggleCompletion}
+        />
       )}
     </div>
   );
