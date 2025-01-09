@@ -5,7 +5,6 @@ function Task({
   task: { expanded, complete, title, subtasks },
   toggleCompletion,
 }) {
-  subtasks.forEach((st) => console.log(st.title));
   return (
     <div className={`${styles.task} ${appStyles.content}`}>
       <div className={styles.title}>
@@ -23,7 +22,7 @@ function Task({
       {subtasks?.length > 0 && expanded ? (
         <ul>
           {subtasks.map((st, i) => (
-            <li key={`${i}-${st.title}`}>
+            <li key={st.id}>
               <input type="checkbox" id={`${st.title}`} />
               <label
                 htmlFor={`${st.title}`}
