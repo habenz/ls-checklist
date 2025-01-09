@@ -1,4 +1,8 @@
 import SubtaskList from "./SubtaskList";
+import {
+  MdOutlineKeyboardArrowUp,
+  MdOutlineKeyboardArrowDown,
+} from "react-icons/md";
 
 function Task({
   task: { id, title, expanded, complete, subtasks },
@@ -22,7 +26,11 @@ function Task({
         <h3 className={complete ? "line-through" : ""}>{title}</h3>
         {subtasks?.length > 0 && (
           <button className="ml-auto" onClick={toggleExpansion}>
-            {expanded ? "^" : "v"}
+            {expanded ? (
+              <MdOutlineKeyboardArrowUp size="1.5rem" />
+            ) : (
+              <MdOutlineKeyboardArrowDown size="1.5rem" />
+            )}
           </button>
         )}
       </div>
