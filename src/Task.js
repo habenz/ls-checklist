@@ -30,11 +30,12 @@ function Task({
               <input
                 type="checkbox"
                 id={`${st.title}`}
+                checked={st.complete || complete}
                 onChange={() => toggleCompletion(st.id)}
               />
               <label
                 htmlFor={`${st.title}`}
-                className={st.complete ? styles.complete : ""}
+                className={st.complete || complete ? styles.complete : ""}
               >
                 {st.title}
               </label>
