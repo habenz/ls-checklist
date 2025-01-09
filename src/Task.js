@@ -16,10 +16,12 @@ function Task({
           }`}
         />
         <h3>{title}</h3>
-        <button onClick={toggleCompletion}>{expanded ? "^" : "v"}</button>
+        {subtasks?.length > 0 && (
+          <button onClick={toggleCompletion}>{expanded ? "^" : "v"}</button>
+        )}
       </div>
       {/* really just because I don't trust myself to hand write json */}
-      {subtasks?.length > 0 && expanded ? (
+      {subtasks?.length > 0 && expanded && (
         <ul>
           {subtasks.map((st, i) => (
             <li key={st.id}>
@@ -33,7 +35,7 @@ function Task({
             </li>
           ))}
         </ul>
-      ) : null}
+      )}
     </div>
   );
 }
