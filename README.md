@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+## Incoming features:
+
+- Save the state of the checklist between refreshes with day timestamped local storage
+- task description modal
+- prettier CSS (via tailwind and icons)
+- Reach: syncing across all devices
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
