@@ -25,6 +25,6 @@
   padding-inline-start: 0.5rem;
 }
 
-.checked {
+.complete {
   text-decoration: line-through;
 }

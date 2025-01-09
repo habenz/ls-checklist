@@ -17,6 +17,30 @@ function App() {
     );
   };
 
+  const toggleCompletion = (taskId) => {
+    setChecklist(
+      checklist.map((task) => {
+        if (task.id == taskId) {
+          return { ...task, complete: !task.complete };
+        }
+        // should we look in the subtasks?
+        if (!task.subtasks) {
+          return task;
+        }
+        if (task.subtasks.some((st) => st.id == taskId)) {
+          return {
+            ...task,
+            subtasks: task.subtasks.map((st) =>
+              st.id == taskId ? { ...st, complete: !st.complete } : st
+            ),
+          };
+        } else {
+          return task;
+        }
+      })
+    );
+  };
+
   return (
     <div className={styles.centered}>
       <h1 className={styles.content}>Checklist</h1>
@@ -25,6 +49,7 @@ function App() {
           key={task.id}
           task={task}
           toggleExpansion={() => toggleExpansion(task.id)}
+          toggleCompletion={toggleCompletion}
         />
       ))}
     </div>
