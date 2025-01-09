@@ -1,4 +1,3 @@
-import appStyles from "./App.module.css";
 import SubtaskList from "./SubtaskList";
 
 function Task({
