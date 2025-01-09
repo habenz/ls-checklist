@@ -11,7 +11,7 @@ function SubtaskList({ subtasks, toggleCompletion, taskComplete }) {
           />
           <label
             htmlFor={`${st.title}`}
-            className={(st.complete || taskComplete) && "line-through"}
+            className={st.complete || taskComplete ? "line-through" : ""}
           >
             {st.title}
           </label>
