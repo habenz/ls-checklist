@@ -1,6 +1,6 @@
 function SubtaskList({ subtasks, toggleCompletion, taskComplete }) {
   return (
-    <ul className="list-none ps-2">
+    <ul className="list-none ps-2 border-solid border rounded-b-lg border-gray-200">
       {subtasks.map((st) => (
         <li key={st.id}>
           <input

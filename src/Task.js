@@ -10,10 +10,8 @@ function Task({
   toggleCompletion,
 }) {
   return (
-    <div
-      className={`max-w-2xl w-4/5 border-solid rounded-t-lg bg-gray-100 mb-2`}
-    >
-      <div className="flex items-center gap-2 px-2 py-1">
+    <div className={`max-w-2xl w-4/5 mb-2`}>
+      <div className="flex items-center gap-2 px-2 py-1 border-solid rounded-t-lg bg-gray-100">
         <input
           type="checkbox"
           className="m-0 p-1"
