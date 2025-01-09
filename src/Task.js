@@ -3,7 +3,7 @@ import appStyles from "./App.module.css";
 
 function Task({
   task: { expanded, complete, title, subtasks },
-  toggleCompletion,
+  toggleExpansion,
 }) {
   return (
     <div className={`${styles.task} ${appStyles.content}`}>
@@ -17,7 +17,7 @@ function Task({
         />
         <h3>{title}</h3>
         {subtasks?.length > 0 && (
-          <button onClick={toggleCompletion}>{expanded ? "^" : "v"}</button>
+          <button onClick={toggleExpansion}>{expanded ? "^" : "v"}</button>
         )}
       </div>
       {/* really just because I don't trust myself to hand write json */}
