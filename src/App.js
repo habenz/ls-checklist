@@ -9,9 +9,12 @@ function App() {
   return (
     <div
       className="flex flex-col items-center 
-                bg-gradient-to-br from-blue-100 to-purple-100 w-screen"
+                bg-gradient-to-br from-blue-100 to-purple-100 w-screen
+                font-inter"
     >
-      <h1 className={`${appContentWidth} px-1 text-xl sm:text-2xl font-bold`}>
+      <h1
+        className={`${appContentWidth} mb-2 text-xl sm:text-2xl font-semibold`}
+      >
         Closing Checklist
       </h1>
       <Checklist initialChecklist={closingChecklist} />
