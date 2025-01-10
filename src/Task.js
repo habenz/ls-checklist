@@ -4,6 +4,7 @@ import {
   MdOutlineKeyboardArrowDown,
 } from "react-icons/md";
 import { appContentWidth } from "./reusedStyles";
+import Checkbox from "./Checkbox";
 
 function Task({
   task: { id, title, expanded, complete, subtasks },
@@ -13,13 +14,9 @@ function Task({
   return (
     <div className={`${appContentWidth} mb-2`}>
       <div className="flex items-center gap-2 px-2 py-1 border-solid rounded-t-lg bg-gray-100">
-        <input
-          type="checkbox"
-          className="m-0 p-1"
+        <Checkbox
           checked={complete}
-          aria-label={`Mark ${title} as ${
-            complete ? "incomplete" : "complete"
-          }`}
+          ariaLabel={`Mark ${title} as ${complete ? "incomplete" : "complete"}`}
           onChange={() => toggleCompletion(id)}
         />
         <h3 className={complete ? "line-through" : ""}>{title}</h3>
