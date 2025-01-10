@@ -8,6 +8,7 @@ function SubtaskList({ subtasks, toggleCompletion, taskComplete }) {
             id={`${st.title}`}
             checked={st.complete || taskComplete}
             onChange={() => toggleCompletion(st.id)}
+            disabled={taskComplete}
           />
           <label
             htmlFor={`${st.title}`}
