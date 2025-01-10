@@ -1,5 +1,10 @@
-import styles from "./Task.module.css";
-import appStyles from "./App.module.css";
+import SubtaskList from "./SubtaskList";
+import {
+  MdOutlineKeyboardArrowUp,
+  MdOutlineKeyboardArrowDown,
+} from "react-icons/md";
+import { appContentWidth } from "./reusedStyles";
+import Checkbox from "./Checkbox";
 
 function Task({
   task: { id, title, expanded, complete, subtasks },
@@ -7,41 +12,31 @@ function Task({
   toggleCompletion,
 }) {
   return (
-    <div className={`${styles.task} ${appStyles.content}`}>
-      <div className={styles.title}>
-        <input
-          type="checkbox"
+    <div className={`${appContentWidth} mb-2`}>
+      <div className="flex items-center gap-2 px-2 py-1 border-solid rounded-t-lg bg-gray-100">
+        <Checkbox
           checked={complete}
-          aria-label={`Mark ${title} as ${
-            complete ? "incomplete" : "complete"
-          }`}
+          ariaLabel={`Mark ${title} as ${complete ? "incomplete" : "complete"}`}
           onChange={() => toggleCompletion(id)}
         />
-        <h3 className={complete ? styles.complete : ""}>{title}</h3>
+        <h3 className={complete ? "line-through" : ""}>{title}</h3>
         {subtasks?.length > 0 && (
-          <button onClick={toggleExpansion}>{expanded ? "^" : "v"}</button>
+          <button className="ml-auto" onClick={toggleExpansion}>
+            {expanded ? (
+              <MdOutlineKeyboardArrowUp size="1.5rem" />
+            ) : (
+              <MdOutlineKeyboardArrowDown size="1.5rem" />
+            )}
+          </button>
         )}
       </div>
       {/* really just because I don't trust myself to hand write json */}
       {subtasks?.length > 0 && expanded && (
-        <ul>
-          {subtasks.map((st) => (
-            <li key={st.id}>
-              <input
-                type="checkbox"
-                id={`${st.title}`}
-                checked={st.complete || complete}
-                onChange={() => toggleCompletion(st.id)}
-              />
-              <label
-                htmlFor={`${st.title}`}
-                className={st.complete || complete ? styles.complete : ""}
-              >
-                {st.title}
-              </label>
-            </li>
-          ))}
-        </ul>
+        <SubtaskList
+          subtasks={subtasks}
+          taskComplete={complete}
+          toggleCompletion={toggleCompletion}
+        />
       )}
     </div>
   );
